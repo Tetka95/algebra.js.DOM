@@ -12,4 +12,4 @@ dDescr.parentNode.append(h2);
 var divInfo = document.createElement("div");
 divInfo.classList.add("info");
 
-dDescr.parentNode.append(divInfo);
+dDescr.parentNode.insertBefore(divInfo, dDescr.nextSibling);
