@@ -8,7 +8,3 @@ var h2 = document.createElement(h2);
 h2.appendChild(document.createTextNode('neki tekst u h2'))
 
 dDescr.parentNode.append(h2);
-
-var li = document.createElement("li");
-var ul = document.querySelector(".ul");
- 
