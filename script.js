@@ -36,7 +36,7 @@ console.log("UL ima LI elemenata: " + ul.childElementCount);
 
 /*
 for(let i = 0; i<ul.childElementCount; i++) {
-    let child = ul.child[i];
+    let child = ul.children[i];
     ul.removeChild(child);
 }
 ---> nije rješenje, bug
