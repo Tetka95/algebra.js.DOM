@@ -26,3 +26,23 @@ divInfo.classList.add("info");
 
 var footElement = document.querySelector("#footer");
 dDescr.parentNode.insertBefore(divInfo, footElement);
+
+var ul = document.querySelector("ul");
+//var li = document.createElement("li");
+
+//ul.appendChild(li); ---> nije novi objekt nego referenca objekta
+
+console.log("UL ima LI elemenata: " + ul.childElementCount);
+
+/*
+for(let i = 0; i<ul.childElementCount; i++) {
+    let child = ul.child[i];
+    ul.removeChild(child);
+}
+---> nije rješenje, bug
+*/
+
+for (let i = 0; i < 3; i++) {
+    let li = document.createElement("li");
+    ul.appendChild(li);
+}
