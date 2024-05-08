@@ -34,6 +34,16 @@ var ul = document.querySelector("ul");
 
 console.log("UL ima LI elemenata: " + ul.childElementCount);
 
+for(let i = ul.childElementCount; i > 0; i--) {
+    let child = ul.children[i - 1];
+    ul.removeChild(child);
+} //--> prvi način brisanja elemenata iz ul
+
+while (ul.childElementCount > 0) {
+    let child = ul.children[0];
+    ul.removeChild(child);
+} //--> drugi način brisanja elemenata iz ul
+
 /*
 for(let i = 0; i<ul.childElementCount; i++) {
     let child = ul.children[i];
@@ -42,7 +52,7 @@ for(let i = 0; i<ul.childElementCount; i++) {
 ---> nije rješenje, bug
 */
 
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 5; i++) {
     let li = document.createElement("li");
     ul.appendChild(li);
 }
