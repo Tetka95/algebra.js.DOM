@@ -22,4 +22,7 @@ dDescr.parentNode.append(h2);
 var divInfo = document.createElement("div");
 divInfo.classList.add("info");
 
-dDescr.parentNode.insertBefore(divInfo, dDescr.nextSibling);
+//dDescr.parentNode.insertBefore(divInfo, dDescr.nextSibling);
+
+var footElement = document.querySelector("#footer");
+dDescr.parentNode.insertBefore(divInfo, footElement);
