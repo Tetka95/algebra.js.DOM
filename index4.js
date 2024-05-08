@@ -7,3 +7,7 @@ for (let elem of ul.children) {
     //elem.textContent = i + ". " + elem.textContent; --> ako je listStyle "none" dodamo i ovaj dio koda
     i++;
 } 
+
+var divInfo = document.querySelector(".info");
+divInfo.classList.add("sakrij");
+
