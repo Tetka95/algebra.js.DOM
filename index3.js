@@ -1,3 +1,4 @@
+debugger;
 var h1 = document.createElement("h1");
 h1.appendChild(document.createTextNode("Karlovac"));
 
@@ -8,7 +9,7 @@ var rijeke = ["Mrežnica", "Kupa", "Korana", "Dobra", "Karlovačko"];
 
 var dDescription = document.querySelector(".description");
 
-dDescription_innerHTML = "Grad na 5 rijeka</h3>"
+dDescription.innerHTML = "Grad na <h3>5 rijeka</h3>"
 
 var divInfo = document.createElement("div");
 divInfo.classList.add("info");
