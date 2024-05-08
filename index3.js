@@ -9,3 +9,10 @@ var rijeke = ["Mrežnica", "Kupa", "Korana", "Dobra", "Karlovačko"];
 var dDescription = document.querySelector(".description");
 
 dDescription_innerHTML = "Grad na 5 rijeka</h3>"
+
+var divInfo = document.createElement("div");
+divInfo.classList.add("info");
+divInfo.innerText = "Peta rijeka je piva.";
+
+var footElement = document.querySelector("#footer");
+footElement.parentNode.insertBefore(divInfo, footElement);
