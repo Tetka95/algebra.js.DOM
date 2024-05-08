@@ -16,3 +16,15 @@ divInfo.innerText = "Peta rijeka je piva.";
 
 var footElement = document.querySelector("#footer");
 footElement.parentNode.insertBefore(divInfo, footElement);
+
+var ul = document.querySelector("ul")
+for(let i = ul.childElementCount; i > 0; i--) {
+    let child = ul.children[i - 1];
+    ul.removeChild(child);
+}
+
+for (let i = 0; i < 5; i++) {
+    let li = document.createElement("li");
+    li.textContent = rijeke[i];
+    ul.appendChild(li);
+}
