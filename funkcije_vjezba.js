@@ -30,7 +30,5 @@ var name1 = "moje ime";
         return x;
     }
     return f;
-})(name1); ///---> ne pozove se???
-
-//3.
+})(name1);
 
