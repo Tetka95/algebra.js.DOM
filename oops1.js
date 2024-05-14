@@ -30,6 +30,11 @@ var proto2 = Object.getPrototypeOf(proto1);
 
 //3.
 proto1.dodaj = function () {
+    let x = Math.random() * quotes.length;
+    let floor = Math.floor(x);
+    console.log("random = " + x);
+    console.log("floor = " + floor);
+    return quotes [floor]; //pojašnjenje one-linera ispod
     return quotes[Math.floor(Math.random() * quotes.length)];
 }
 console.log(proto1.dodaj());
