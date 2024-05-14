@@ -25,7 +25,11 @@ const quotes = [
 //2.
 var proto1 = Object.getPrototypeOf(character);
 ///console.log(proto1);
+var proto2 = Object.getPrototypeOf(proto1);
+console.log(proto2);
 
 //3.
-
-
+proto1.dodaj = function () {
+    return quotes[0];
+}
+console.log(proto1.dodaj());
