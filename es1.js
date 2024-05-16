@@ -36,3 +36,4 @@ for (var i = 0; i < 10; i++) { //let zamijenjen var-om
     }, 1000);
     console.log(i);
 }
+///let ispisuje sve, var će ispisat samo zadnje (ali navesti da je vrijednost deset puta "ispisana", dobijemo zadnju vrijednost)
