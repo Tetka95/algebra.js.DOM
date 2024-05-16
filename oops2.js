@@ -20,7 +20,7 @@ function Dog(name) {
 
 //2.
 var dog = new Dog();
-console.log("Ime psa po defaultu je " + dog.dogName); 
+console.log("Ime psa (default) je " + dog.dogName); 
 
 var dog1 = new Dog("Floki");
 console.log("Ime psa je " + dog1.dogName);
