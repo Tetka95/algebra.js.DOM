@@ -8,11 +8,14 @@ walk() i getTotalSteps().
 */
 
 var brojanjeKoraka = (function() {
-    //TO DO: dio koda za povećavanje broja koraka
     var koraci = 0;
+    function increaseSteps() {
+        koraci++;
+    }
+
     return {
         walk: function (){
-            koraci++;
+            increaseSteps();
         },
         getTotalSteps: function () {
             return koraci;
