@@ -22,8 +22,20 @@ function Dog(name) {
 var dog = new Dog();
 console.log("Ime psa po defaultu je " + dog.dogName); 
 
+var dog1 = new Dog("Floki");
+console.log("Ime psa je " + dog1.dogName);
 
 //3.
-var dog1 = new Dog("Floki");
+Dog.prototype.imePsa = function(){
+    return this.dogName;
+}
+console.log("Ime psa(default) je " + dog.imePsa());
+console.log("Ime psa(određeno) je " + dog1.imePsa());
 
-console.log("Ime psa je " + dog1.dogName);
+//4. Dodaj funkciju bark
+Dog.prototype.bark = function(){
+    return "woof woof";
+}
+
+console.log("Pas(default) se glasa " + dog.bark());
+console.log("Pas(određeno) se glasa " + dog1.bark());
