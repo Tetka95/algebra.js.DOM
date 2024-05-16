@@ -18,6 +18,8 @@ function Dog(name) {
         this.dogName = name}
 }
 
+this.bojaPsa = "crna"; ///dodano svojstvo koje nije funkcija (sve se može)
+
 //2.
 var dog = new Dog();
 console.log("Ime psa (default) je " + dog.dogName); 
@@ -40,4 +42,3 @@ Dog.prototype.bark = function(){
 console.log("Pas(default) se glasa " + dog.bark());
 console.log("Pas(određeno) se glasa " + dog1.bark());
 
-Dog.bojaPsa = "crna"; ///dodano svojstvo koje nije funkcija (sve se može)
