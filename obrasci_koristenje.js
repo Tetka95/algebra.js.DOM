@@ -1,25 +1,25 @@
 var brojanje = require('./obrasci');
 
 //početak = 0 koraka
-console.log("Total steps: " + brojanje.getTotalSteps()); //0
+console.log("Total steps: " + brojanje.getTotalSteps());
 
 brojanje.walk();
-console.log("Total steps: " + brojanje.getTotalSteps()); //2
+console.log("Total steps: " + brojanje.getTotalSteps());
 
 brojanje.walk();
-console.log("Total steps: " + brojanje.getTotalSteps()); //4
+console.log("Total steps: " + brojanje.getTotalSteps());
 
 brojanje.walk();
-console.log("Total steps: " + brojanje.getTotalSteps()); //6
+console.log("Total steps: " + brojanje.getTotalSteps());
 
 brojanje.walk();
-console.log("Total steps: " + brojanje.getTotalSteps()); //8
+console.log("Total steps: " + brojanje.getTotalSteps());
 
 brojanje.walk();
-console.log("Total steps: " + brojanje.getTotalSteps()); //10
+console.log("Total steps: " + brojanje.getTotalSteps());
 
-brojanje.walk();
-console.log("Total steps: " + brojanje.getTotalSteps()); //12
+brojanje.run();
+console.log("Total steps(run): " + brojanje.getTotalSteps());
 
 var total = brojanje.getTotalSteps();
 console.log("Total steps (final): " + total);

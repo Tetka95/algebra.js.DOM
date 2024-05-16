@@ -19,7 +19,10 @@ var brojanjeKoraka = (function() {
         },
         getTotalSteps: function () {
             return koraci;
-        }
+        },
+        run: function () {
+            koraci += 5;
+        },
     };
 })();
 
