@@ -10,7 +10,7 @@ class Dog {
 
 class GoldenRetriever extends Dog {
     constructor(godine, vrsta) {
-        super();
+        super(); ///nije spomenuto u predavanju, ali dobro za znat
         this.godine = godine;
         this.vrsta = vrsta;
     }
