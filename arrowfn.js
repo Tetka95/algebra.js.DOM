@@ -10,7 +10,7 @@ console.log(bark);
 console.log(barkx);
 
 let myArray = ["ime1", "ime2", "ime3"];
-forEach (myArray, element => {
-    console.log(this);
+myArray.forEach ((element) => {
+    console.log(element);
     return element;
 });
