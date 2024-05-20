@@ -9,6 +9,7 @@ const barkx = function bark2 () {
 console.log(bark);
 console.log(barkx);
 
+
 let myArray = ["ime1", "ime2", "ime3"];
 myArray.forEach ((element) => {
     console.log(element);
