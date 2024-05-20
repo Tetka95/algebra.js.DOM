@@ -1,5 +1,7 @@
 class Dog {
-    constructor(){}
+    constructor(){
+        console.log("x");
+    }
     imePsa = "Rex";
     vrsta = "Seoski pas";
     godine = 1;
