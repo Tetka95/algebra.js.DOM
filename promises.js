@@ -12,7 +12,7 @@ vrijednosti, a na reject reagira sa console.log-om stringa "Oh, no!"
 
 const getX = () => Math.random() >= 0.5;
 
-var ispisi = new Promise(function (resolve, reject) {
+var ispisi = new Promise((resolve, reject) => {
     ///console.log("pozvan promise object");
     let x = getX();
     console.log("x = " + x);
