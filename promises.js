@@ -12,13 +12,14 @@ vrijednosti, a na reject reagira sa console.log-om stringa "Oh, no!"
 
 const getX = () => Math.random() >= 0.5;
 
-let ispisi = new Promise(function (resolve, reject) {
-    console.log("pozvan promise object");
+var ispisi = new Promise(function (resolve, reject) {
+    ///console.log("pozvan promise object");
     let x = getX();
-    if (x == true) {
-        return resolve;
+    console.log("x = " + x);
+    if (x) {
+        return setTimeout(() => resolve(x), 1000);
     }
-    return reject;
+    return setTimeout(reject, 1000);
 })
-.then(console.log("neka vrijednost"))
-.catch(console.log("Oh, no!"));
+.then(((vrijednost) => console.log("neka vrijednost = " + vrijednost)))
+.catch(() => console.log("Oh, no!"));
